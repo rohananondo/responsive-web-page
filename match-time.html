@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* <!-- ---------------------------------------------
+        ---------------top banner style---------------------
+    ---------------------------------------------- --> */
+        .banner {
+            background-color: black;
+            border-radius: 10px;
+            width: 900px;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .top-banner {
+            display: flex;
+            color: white;
+        }
+
+        .banner-info {
+            width: 50%;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        .button {
+            margin-top: 30px;
+            padding: 10px 10px;
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .banner-poster {
+            margin-left: 50px;
+
+
+        }
+
+        /* -----------------------------match-info------------------------ */
+        .match-info {
+            width: 900px;
+            display: flex;
+            margin-bottom: 50px;
+
+        }
+
+        .side-nav {
+            display: flex;
+            flex-direction: column;
+            width: 120px;
+            height: 125px;
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            margin-right: 10px;
+
+        }
+
+        button {
+            margin-bottom: 5px;
+            padding: 10px 5px;
+            border-radius: 5px;
+        }
+
+        .vlog-button {
+            background-color: red;
+
+
+        }
+
+        .a {
+            color: white;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .vlogs {
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 30px;
+            grid-row-gap: 20px;
+        }
+
+        .vlog {
+
+            width: 200px;
+            height: 170px;
+            padding: 20px;
+            background-color: whitesmoke;
+
+        }
+
+        .vlog img {
+            width: 100%;
+        }
+
+        .flag {
+            display: flex;
+            align-items: center;
+        }
+
+        .flag-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .team-name {
+            font-weight: bolder;
+            margin-top: 30px;
+            margin-bottom: 0;
+        }
+
+        .match-time {
+            color: gray;
+        }
+
+        /* h3 {
+            margin-left: 5px;
+        } */
+        /*==---------------------- footer--------------- */
+        footer {
+            background-color:
+                blue;
+            width: 100%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        hr {
+            width:
+                70%;
+            margin-bottom: 50px;
+        }
+
+        .footer-info {
+            display: flex;
+            gap: 100px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        @media only screen and (max-width: 688px) {
+            .banner {
+                background-color: black;
+                border-radius: 10px;
+                width: auto;
+                padding-left: 20px;
+            }
+
+            .top-banner {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                color: white;
+            }
+
+            .banner-info {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+
+            }
+
+            .match-info {
+                width: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            .vlogs {
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                grid-row-gap: 20px;
+            }
+
+            .side-nav {
+                display: flex;
+                flex-direction: row;
+                width: 300px;
+                height: 55px;
+                margin-bottom: 20px;
+
+
+
+
+            }
+
+            button {
+
+                border-radius: 5px;
+                width: 100px;
+                height: 50px;
+            }
+
+            .buy {
+                visibility: visible;
+                margin-top: 40px;
+            }
+
+            .footer-info {
+                display: flex;
+                gap: 20px;
+                margin-bottom: 20px;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ---------------------------------------------
+        ---------------top banner---------------------
+    ---------------------------------------------- -->
+
+    <section class="banner">
+        <div class="top-banner">
+            <div class="banner-info">
+                <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est expedita quasi veritatis cupiditate,
+                    autem aperiam, error alias fugiat, quam ipsum suscipit. Dicta obcaecati expedita eum consectetur
+                    sequi.</p>
+                <button class="button">Watch Live</button>
+            </div>
+            <div class="banner-poster">
+                <img src="photos/Banner Image.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="match-info">
+        <div class="side-nav">
+            <button><a href="">Upcoming Match</a></button>
+            <button> <a href="">All Group</a></button>
+            <button class="vlog-button"><a href="" class="a">Vlog</a></button>
+        </div>
+        <div class="vlogs">
+            <div class="vlog">
+
+                <div class="flag"> <img src="photos/germany Flag.png" alt="">
+                    <H3>vs</H3> <img src="photos/Flag.png" alt="">
+                </div>
+
+                <div class="flag-info">
+                    <p class="team-name">
+                        Germany VS Franch
+                    </p>
+                    <p class="match-time">April 01, 2023, 1:AM</p>
+                </div>
+
+
+            </div>
+            <div class="vlog">
+
+                <div class="flag"> <img src="photos/germany Flag.png" alt="">
+                    <H3>vs</H3> <img src="photos/Flag.png" alt="">
+                </div>
+
+                <div class="flag-info">
+                    <p class="team-name">Germany VS Franch</p>
+                    <p class="match-time">April 01, 2023, 1:AM</p>
+                </div>
+
+
+            </div>
+            <div class="vlog">
+
+                <div class="flag"> <img src="photos/germany Flag.png" alt="">
+                    <H3>vs</H3> <img src="photos/Flag.png" alt="">
+                </div>
+
+                <div class="flag-info">
+                    <p class="team-name">Germany VS Franch</p>
+                    <p class="match-time">April 01, 2023, 1:AM</p>
+                </div>
+
+
+            </div>
+            <div class="vlog">
+
+                <div class="flag"> <img src="photos/germany Flag.png" alt="">
+                    <H3>vs</H3> <img src="photos/Flag.png" alt="">
+                </div>
+
+                <div class="flag-info">
+                    <p class="team-name">Germany VS Franch</p>
+                    <p class="match-time">April 01, 2023, 1:AM</p>
+                </div>
+
+
+            </div>
+            <div class="vlog">
+
+                <div class="flag"> <img src="photos/germany Flag.png" alt="">
+                    <H3>vs</H3> <img src="photos/Flag.png" alt="">
+                </div>
+
+                <div class="flag-info">
+                    <p class="team-name">Germany VS Franch</p>
+                    <p class="match-time">April 01, 2023, 1:AM</p>
+                </div>
+
+
+            </div>
+            <div class="vlog">
+
+                <div class="flag"> <img src="photos/germany Flag.png" alt="">
+                    <H3>vs</H3> <img src="photos/Flag.png" alt="">
+                </div>
+
+                <div class="flag-info">
+                    <p class="team-name">Germany VS Franch</p>
+                    <p class="match-time">April 01, 2023, 1:AM</p>
+                </div>
+
+
+            </div>
+            <div class="vlog">
+
+                <div class="flag"> <img src="photos/germany Flag.png" alt="">
+                    <H3>vs</H3> <img src="photos/Flag.png" alt="">
+                </div>
+
+                <div class="flag-info">
+                    <p class="team-name">Germany VS Franch</p>
+                    <p class="match-time">April 01, 2023, 1:AM</p>
+                </div>
+
+
+            </div>
+            <div class="vlog">
+
+                <div class="flag"> <img src="photos/germany Flag.png" alt="">
+                    <H3>vs</H3> <img src="photos/Flag.png" alt="">
+                </div>
+
+                <div class="flag-info">
+                    <p class="team-name">Germany VS Franch</p>
+                    <p class="match-time">April 01, 2023, 1:AM</p>
+                </div>
+
+
+            </div>
+            <div class="vlog">
+
+                <div class="flag"> <img src="photos/germany Flag.png" alt="">
+                    <H3>vs</H3> <img src="photos/Flag.png" alt="">
+                </div>
+
+                <div class="flag-info">
+                    <p class="team-name">Germany VS Franch</p>
+                    <p class="match-time">April 01, 2023, 1:AM</p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+</body>
+<footer>
+    <div class="footer-title">
+        <h1>GOAL</h1>
+    </div>
+    <hr>
+    <div class="footer-info">
+        <a href="">Contuct Us</a>
+        <a href="">Condition</a>
+        <a href="">Dtails</a>
+        <a href="">Setting</a>
+        <a href="">Goal</a>
+    </div>
+</footer>
+
+</html>
